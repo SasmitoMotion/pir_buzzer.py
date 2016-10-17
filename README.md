@@ -3,22 +3,23 @@
 # on Raspberry Pi 2
 # sensor pir motion detection have 3 output Vcc, Output and Ground
 # buzzer for alert have 2 output Vcc and Ground
+ 
 
-import RPi.GPIO as GPIO
+    import RPi.GPIO as GPIO
 
-import time
+    import time
 
-pir_sensor = 11                   # at GPIO 11
+    pir_sensor = 11                   # at GPIO 11
 
-piezo = 3                         # at GPIO 3
+    piezo = 3                         # at GPIO 3
 
-GPIO.setmode(GPIO.BOARD)
+    GPIO.setmode(GPIO.BOARD)
 
-GPIO.setup(pir_sensor, GPIO.IN)
+    GPIO.setup(pir_sensor, GPIO.IN)
 
-GPIO.setup(piezo, GPIO.OUT)
+    GPIO.setup(piezo, GPIO.OUT)
 
-while True:
+    while True:
 
         i=GPIO.input(11)           # pir sensor for input
         

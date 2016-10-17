@@ -22,8 +22,8 @@ Step 4 – Install the library
 
     import RPi.GPIO as GPIO
     import time
-    pir_sensor = 11                   # at GPIO 11
-    piezo = 3                         # at GPIO 3
+    pir_sensor = 11               # at GPIO 11
+    piezo = 3                     # at GPIO 3
     GPIO.setmode(GPIO.BOARD)
     GPIO.setup(pir_sensor, GPIO.IN)
     GPIO.setup(piezo, GPIO.OUT)

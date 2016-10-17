@@ -28,3 +28,10 @@ while True:
             print ("Motion detected"), i
             GPIO.output(3, 1)
             time.sleep(0.1)
+
+https://pinout.xyz/
+https://www.raspberrypi.org/learning/parent-detector/worksheet/
+http://raspberrypi.stackexchange.com/questions/46801/use-a-pir-sensor-to-detect-motion-and-activate-a-piezo-speaker
+http://thejackalofjavascript.com/rpi-pir-sensor-node-iot-intruder-alert/
+https://sourceforge.net/p/raspberry-gpio-python/wiki/install/
+http://www.raspberrypi-spy.co.uk/2012/05/install-rpi-gpio-python-library/

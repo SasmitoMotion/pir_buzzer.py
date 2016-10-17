@@ -1,4 +1,21 @@
 # Use sensor pir and buzzer for alert detection
+
+Step 1 – Download the library
+
+    wget https://pypi.python.org/packages/source/R/RPi.GPIO/RPi.GPIO-0.5.11.tar.gz
+
+Step 2 – Extract the archive to a new folder
+
+    tar -xvf RPi.GPIO-0.5.11.tar.gz
+
+Step 3 – Browse to the new directory
+
+    cd RPi.GPIO-0.5.11
+
+Step 4 – Install the library
+
+    sudo python setup.py install
+
 # on Raspberry Pi 2
 
  
@@ -12,21 +29,13 @@
     GPIO.setup(piezo, GPIO.OUT)
     while True:
         i=GPIO.input(11)           # pir sensor for input
-      
         if i==0:                   # if the condition not active
-            
             print ("Motion not detected"),i
-       
             GPIO.output(3, 0)      # output buzzer not active
-            
             time.sleep(0.1)
-        
         if i==1:                   # if the condition active
-            
             print ("Motion detected"), i
-            
             GPIO.output(3, 1)      #output buzzer active
-            
             time.sleep(0.1)
 
 https://pinout.xyz/

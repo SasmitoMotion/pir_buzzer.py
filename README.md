@@ -19,14 +19,14 @@ GPIO.setup(pir_sensor, GPIO.IN)
 GPIO.setup(piezo, GPIO.OUT)
 
 while True:
-        i=GPIO.input(11)
-        if i==0:
+        i=GPIO.input(11)           # pir sensor for input
+        if i==0:                   # if the condition not active
             print ("Motion not detected"),i
-            GPIO.output(3, 0)
+            GPIO.output(3, 0)      # output buzzer not active
             time.sleep(0.1)
-        if i==1:
+        if i==1:                   # if the condition active
             print ("Motion detected"), i
-            GPIO.output(3, 1)
+            GPIO.output(3, 1)      #output buzzer active
             time.sleep(0.1)
 
 https://pinout.xyz/
